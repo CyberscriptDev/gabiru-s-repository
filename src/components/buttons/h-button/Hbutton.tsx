@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Field } from './Hbutton.style';
+import { Button } from './Hbutton.style';
 
 interface Props {
   text: string,
@@ -7,11 +7,9 @@ interface Props {
 
 export default function Hbutton({ text }: Props) {
   return (
-    <Field>
-      <Button
-        type="button"
-      >{ text }
-      </Button>
-    </Field>
+    <Button
+      type="button"
+    >{ text }
+    </Button>
   );
 }
