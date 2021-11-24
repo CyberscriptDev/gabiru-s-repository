@@ -5,7 +5,8 @@ export function Home() {
   return (
     <section>
       <Hbutton
-        text="click"
+        child={<p>Botão</p>}
+        backgroundColor='#6945c2'
       />
     </section>
   );

@@ -1,11 +1,18 @@
 import styled from 'styled-components';
 
-export const Button = styled.button`
-  border: solid black 0.2;
-  border-radius: 0.4em;
-  padding: 10px 25px;
+interface IButton {
+  isOutlined?: boolean,
+  backgroundColor?: string,
+}
+
+export const Button = styled.button<IButton>`
+  border: solid gray 0.1em;
+  border-radius: 0.3em;
+  background-color: ${({ backgroundColor }) => backgroundColor ? backgroundColor : 'white' };
+  padding: 1px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: bold;
 `;
